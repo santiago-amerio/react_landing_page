@@ -17,18 +17,7 @@ function App() {
       id: "greeting"
     }
   ]
-  const sections = [
-    {
-      title: "<a href='#head'><h1 style='font-size: 3rem;' >¡--santiago_&#x5f_amerio--¡</h1></a>",
-      content: "Desarollo full-stack, Administracion de sistemas, Redes, Electronica, Automatizacion.",
-      id: "head2"
-    },
-    {
-      title: "<h2>Hola!</h2>", content: "<h4>En esta pagina se pueden ver algunos de los <a href='#proyectos'>¡--_p_royectos--¡</a> en los que trabaje en los ultimos años. </br>\
-    Tambien un resumen de los <a href='#brief' >¡--_c_onocimientos--¡</a> en relacion a tecnologia que fui obteniendo.</h4>",
-      id: "greeting"
-    }
-  ]
+ 
 
 
   const brief_content = [
