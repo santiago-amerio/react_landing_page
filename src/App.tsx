@@ -82,7 +82,7 @@ function App() {
           </div>
 
         </div>
-        <div className="sec brief">
+        <div id="brief" className="sec brief">
           {brief_content.map((item, index) => (
             <div key={index}>
 

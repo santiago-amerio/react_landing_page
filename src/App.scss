@@ -27,8 +27,6 @@ $secondary_text-color: $primary_text_color;
 // $base_text_color : #a4a4a4;
 
 #app {
-    overflow-y: scroll;
-    scroll-snap-type: y proximity;
     height: 100vh;
 }
 
@@ -63,7 +61,7 @@ $secondary_text-color: $primary_text_color;
         display: flex;
         flex-direction: column;
         justify-content: center;
-        transform:translate(0,-100px)
+        // transform:translate(0,-100px)
     }
 }
 
@@ -71,23 +69,18 @@ $secondary_text-color: $primary_text_color;
 
 .sec {
     align-items: center;
-    scroll-snap-align: start;
     min-height: 100vh;
+
 
     .starting_highlight {
         color: $primary_highlight;
     }
 
     .highlight {
-        span {
-            overflow: hidden;
-        }
-
         .chars1,
         .chars2 {
             color: red;
             position: relative;
-            overflow: hidden;
             background: linear-gradient(to right, $primary_highlight, $primary_highlight 50%, $primary_text_color 50%);
             background-clip: text;
             -webkit-background-clip: text;
