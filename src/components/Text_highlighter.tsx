@@ -1,4 +1,4 @@
-import "./css/text_highlight.scss"
+// import "./css/text_highlight.scss"
 
 
 interface InnerHtml {

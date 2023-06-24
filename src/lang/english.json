@@ -1,0 +1,72 @@
+{
+    "introduction": [
+        {
+            "title": "<a href='#head'><h1 style='font-size: 3rem;' >¡--santiago_&#x5f_amerio--¡</h1></a>",
+            "content": "Full-stack Development, System Administration, Networking, Electronics, Automatization",
+            "id": "head"
+        },
+        {
+            "title": "<h2>Hi!</h2>",
+            "content": "<h4>You can check out some of the <a href='#proyectos' class='link-pointer'>¡--_p_rojects--¡</a> I've been working on in over the past few years on this page.</br> Also a summary of the  <a href='#brief' class='link-pointer'>¡--_k_nowledge--¡</a>  I have been acquiring regarding technology.</h4>",
+            "id": "greeting"
+        }
+    ],
+    "brief_content": [
+        {
+            "category": "¡--_d_evelopment--¡",
+            "list": [
+                {
+                    "title": "--_F_ront--_end",
+                    "list": [
+                        "--__HTML--",
+                        "¡--__JavaScript--¡",
+                        "--__CSS--",
+                        "--__React--JS",
+                        "--__Vue--JS"
+                    ]
+                },
+                {
+                    "title": "¡--_B_ack--_end¡",
+                    "list": [
+                        "--__MySQL--",
+                        "--__Mongo--DB",
+                        "--__PHP--",
+                        "--__Python--",
+                        "--__Node--JS"
+                    ]
+                }
+            ]
+        },
+        {
+            "category": "¡--_i_t--¡",
+            "list": [
+                {
+                    "title": "¡--_N_etworking--¡",
+                    "list": [
+                        "¡--__Router--¡, ¡--__switch--¡ and ¡--__AP--¡ setup and configuration",
+                        " RJ45 connectors ¡--__crimping--¡ (ethernet)",
+                        "¡--__Server--¡ setup and maintenance",
+                        "¡--__V-lans--¡ setup",
+                        "¡--__nginx reverse proxy-- setup",
+                        "Deployment of services using ¡--_ _Docker--¡"
+                    ]
+                },
+                {
+                    "title": "¡--_S_ys_admin--¡",
+                    "list": [
+                        "windows",
+                        "linux(debian, manjaro,fedora)"
+                    ]
+                },
+                {
+                    "title": "¡--_H_ardware--¡",
+                    "list": [
+                        "",
+                        "¡--__PC--¡ and ¡--__server--¡ diagnostic and repair",
+                        "¡--__pcb--¡-level repair for simple boards"
+                    ]
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,44 @@
+.brief {
+    $borders : hsla(0, 0%, 100%, 0.3);
+
+    @media (min-width: 720px) {
+
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: start;
+        padding-top: 10%;
+
+    }
+
+    .list {
+        display: flex;
+        flex-direction: column;
+
+        div {
+            margin: 1rem;
+            max-width: fit-content;
+        }
+
+        .tech-title {
+            margin: 0;
+            padding-left: .5rem;
+            background-image: linear-gradient($borders, $borders);
+            background-size: 80% 2px;
+            background-position: bottom left;
+            background-repeat: no-repeat;
+
+        }
+
+        .tech-item {
+            margin: 0;
+            padding: .2rem .3rem;
+            border-left: 1px solid $borders;
+            background-image: linear-gradient($borders, $borders);
+            background-size: 1.5rem 1px;
+            background-position: bottom left;
+            background-repeat: no-repeat;
+        }
+    }
+
+}

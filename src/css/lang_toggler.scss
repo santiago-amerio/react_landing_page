@@ -1,0 +1,28 @@
+#language_toggler_container {
+    position: fixed;
+    top: 2%;
+    right: 2%;
+
+    button {
+        padding: calc(.2rem + 2px) calc(.7rem + 2px);
+        background-color: rgb(221, 220, 220);
+        border: none;
+        font-weight: bolder;
+
+        position: relative;
+        background: linear-gradient(to right, #a227cd, #a227cd 50%, white 50%);
+        // background-clip: text;
+        // -webkit-background-clip: text;
+        // -webkit-text-fill-color: transparent;
+        background-size: 200% 100%;
+        background-position: 100%;
+        transition: background-position .2s ease;
+
+        &:hover {
+
+            background-position: 0 200%;
+
+
+        }
+    }
+}

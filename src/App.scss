@@ -1,17 +1,3 @@
-a {
-    text-decoration: none;
-
-    &.link-pointer>.highlight::before {
-        content: ">";
-        color: #a227cd;
-
-    }
-
-}
-
-
-
-
 $primary_highlight: #a227cd;
 $primary_background: #181818;
 
@@ -23,63 +9,31 @@ $secondary_text-color: $primary_text_color;
 
 
 
-// $secondary_background: #181818;
-// $base_text_color : #a4a4a4;
-
-#app {
-    height: 100vh;
-}
-
-.title-left {
-    text-align: left;
-    margin: 0;
-}
-
-.text-small {
-    font-size: .8rem;
-}
-
-
-.text-center {
-    text-align: center;
-}
-
-
-#head {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: start;
-
-    >:nth-child(1) {
-        align-self: start;
-        margin-left:1rem;
-    }
-
-    >:nth-child(2) {
-        flex-grow: 5;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        // transform:translate(0,-100px)
-    }
-}
-
 
 
 .sec {
+    >div {
+        transition: opacity .3s ease;
+    }
+
+    &.translating {
+        div {
+            opacity: 0;
+        }
+    }
+
     align-items: center;
     min-height: 100vh;
-
 
     .starting_highlight {
         color: $primary_highlight;
     }
 
     .highlight {
+
         .chars1,
         .chars2 {
-            color: red;
+
             position: relative;
             background: linear-gradient(to right, $primary_highlight, $primary_highlight 50%, $primary_text_color 50%);
             background-clip: text;
@@ -104,7 +58,6 @@ $secondary_text-color: $primary_text_color;
     }
 
     &:nth-child(2n) {
-        // color: $base_text_color;
         background-color: $secondary_background;
 
         .starting_highlight {
@@ -128,54 +81,12 @@ $secondary_text-color: $primary_text_color;
                 .chars1 {
                     // background-position: 0 100%;
                     background-position: 200%;
-
                 }
 
                 .chars2 {
                     background-position: 0;
                 }
             }
-
-
         }
     }
-
-}
-
-
-
-
-.brief {
-    $borders : hsla(0, 0%, 100%, 0.3);
-
-    .list {
-        display: flex;
-        flex-direction: column;
-
-        div {
-            margin: 1rem;
-            max-width: fit-content;
-        }
-
-        .tech-title {
-            margin: 0;
-            padding-left: .5rem;
-            background-image: linear-gradient($borders, $borders);
-            background-size: 80% 2px;
-            background-position: bottom left;
-            background-repeat: no-repeat;
-
-        }
-
-        .tech-item {
-            margin: 0;
-            padding: .2rem .3rem;
-            border-left: 1px solid $borders;
-            background-image: linear-gradient($borders, $borders);
-            background-size: 1.5rem 1px;
-            background-position: bottom left;
-            background-repeat: no-repeat;
-        }
-    }
-
 }
