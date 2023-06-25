@@ -8,12 +8,10 @@ $primary_text_color: rgb(202, 201, 201);
 $secondary_text-color: $primary_text_color;
 
 
-
-
-
 .sec {
     >div {
-        transition: opacity .3s ease;
+        transition: opacity .1s ease;
+
     }
 
     &.translating {

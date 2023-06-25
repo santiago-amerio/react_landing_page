@@ -18,7 +18,7 @@ function App() {
   const [currentLanguage, setCurrentLanguage] = useState('en');
   const handleLanguageSwitch = async () => {
     setIsTranslating("translating")
-    await timeout(500);
+    await timeout(150);
     setIsTranslating("")
     setCurrentLanguage(currentLanguage === 'en' ? 'es' : 'en');
   }
