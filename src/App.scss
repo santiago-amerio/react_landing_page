@@ -9,14 +9,15 @@ $secondary_text-color: $primary_text_color;
 
 
 .sec {
-    >div {
-        transition: opacity .1s ease;
-
+    * {
+        transition: opacity .5s ease;
+        opacity: 1;
     }
 
+    
     &.translating {
-        div {
-            opacity: 0;
+        * {
+            opacity: .1
         }
     }
 

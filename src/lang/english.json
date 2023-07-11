@@ -2,71 +2,105 @@
     "introduction": [
         {
             "title": "<a href='#head'><h1 style='font-size: 3rem;' >¡--santiago_&#x5f_amerio--¡</h1></a>",
-            "content": "Full-stack Development, System Administration, Networking, Electronics, Automatization",
+            "content": "Full-stack Development, System Administration, Networking, Electronics, Automation",
             "id": "head"
         },
         {
-            "title": "<h2>Hi!</h2>",
-            "content": "<h4>You can check out some of the <a href='#proyectos' class='link-pointer'>¡--_p_rojects--¡</a> I've been working on in over the past few years on this page.</br> Also a summary of the  <a href='#brief' class='link-pointer'>¡--_k_nowledge--¡</a>  I have been acquiring regarding technology.</h4>",
+            "title": "Hi!",
+            "content": "You can check out some of the <a href='#proyectos' class='link-pointer'>¡--_p_rojects--¡</a> I've been working on in over the past few years on this page.</br> Also a summary of the  <a href='#brief' class='link-pointer'>¡--_k_nowledge--¡</a>  I have been acquiring regarding technology.",
             "id": "greeting"
         }
     ],
-    "brief_content": [
-        {
-            "category": "¡--_d_evelopment--¡",
-            "list": [
-                {
-                    "title": "--_F_ront--_end",
-                    "list": [
-                        "--__HTML--",
-                        "¡--__JavaScript--¡",
-                        "--__CSS--",
-                        "--__React--JS",
-                        "--__Vue--JS"
-                    ]
-                },
-                {
-                    "title": "¡--_B_ack--_end¡",
-                    "list": [
-                        "--__MySQL--",
-                        "--__Mongo--DB",
-                        "--__PHP--",
-                        "--__Python--",
-                        "--__Node--JS"
-                    ]
-                }
-            ]
-        },
-        {
-            "category": "¡--_i_t--¡",
-            "list": [
-                {
-                    "title": "¡--_N_etworking--¡",
-                    "list": [
-                        "¡--__Router--¡, ¡--__switch--¡ and ¡--__AP--¡ setup and configuration",
-                        " RJ45 connectors ¡--__crimping--¡ (ethernet)",
-                        "¡--__Server--¡ setup and maintenance",
-                        "¡--__V-lans--¡ setup",
-                        "¡--__nginx reverse proxy-- setup",
-                        "Deployment of services using ¡--_ _Docker--¡"
-                    ]
-                },
-                {
-                    "title": "¡--_S_ys_admin--¡",
-                    "list": [
-                        "windows",
-                        "linux(debian, manjaro,fedora)"
-                    ]
-                },
-                {
-                    "title": "¡--_H_ardware--¡",
-                    "list": [
-                        "",
-                        "¡--__PC--¡ and ¡--__server--¡ diagnostic and repair",
-                        "¡--__pcb--¡-level repair for simple boards"
-                    ]
-                }
-            ]
-        }
-    ]
+    "proyects_content": {
+        "title": "projects",
+        "content": [
+            {
+                "title": "asignaciones.com.ar",
+                "sections": [
+                    {
+                        "subtitle": "what is it?<br>",
+                        "content": "\"Asignaciones\" is an <small class='text-small'>[unofficial]</small>project designed to display information about the work schedules of my former colleagues at Burger King. The platform serves as a source of information regarding work schedules, enabling users to access this information quickly and easily. Through Asignaciones, users can view their schedules more effectively and get insights into the work schedules of their colleagues."
+                    },
+                    {
+                        "subtitle": "why?<br>",
+                        "content": "Initially, it was a solution to assist my coworkers who didn't have Android devices since the official application provided by the company was only compatible with those devices.<br>  Additionally, it offers additional features that enhance the user experience compared to the official application: <ul><li>Users can access a complete record of previous work schedules.</li><li>It provides the ability to automatically calculate the number of hours worked in a bi-weekly period.</li> <li>Users can view a detailed list of individuals scheduled to work on specific days, facilitating coordination and communication among coworkers.</li><li>Higher uptime compared to the official system.</li><li>And much more.</li></ul>"
+                    },
+                    {
+                        "subtitle": "how?<br>",
+                        "content": "The system retrieves the list of schedules from the official API and stores a copy in a MySQL database. This ensures that the system can continue displaying schedule information even if the official system is not operational."
+                    },
+                    {
+                        "subtitle": "with what?<br>",
+                        "content": "This page has gone through several iterations, but nowadays it consists of a PHP backend with MySQL and a frontend using React."
+                    },
+                    {
+                        "subtitle": "where?<br>",
+                        "content": "in my home server through cloudflare's tunneling."
+                    }
+                ],
+                "category": "fullstack"
+            }
+        ]
+    },
+    "brief_content": {
+        "title": "knowledge",
+        "content": [
+            {
+                "category": "¡--_d_evelopment--¡",
+                "list": [
+                    {
+                        "title": "--_F_ront--_end",
+                        "list": [
+                            "--__HTML--",
+                            "¡--__JavaScript--¡",
+                            "--__CSS--",
+                            "--__React--JS",
+                            "--__Vue--JS"
+                        ]
+                    },
+                    {
+                        "title": "¡--_B_ack--_end¡",
+                        "list": [
+                            "--__MySQL--",
+                            "--__Mongo--DB",
+                            "--__PHP--",
+                            "--__Python--",
+                            "--__Node--JS"
+                        ]
+                    }
+                ]
+            },
+            {
+                "category": "¡--_i_t--¡",
+                "list": [
+                    {
+                        "title": "¡--_N_etworking--¡",
+                        "list": [
+                            "¡--__Router--¡, ¡--__switch--¡ and ¡--__AP--¡ setup and configuration",
+                            " RJ45 connectors ¡--__crimping--¡ (ethernet)",
+                            "¡--__Server--¡ setup and maintenance",
+                            "¡--__V-lans--¡ setup",
+                            "¡--__nginx reverse proxy-- setup",
+                            "Deployment of services using ¡--_ _Docker--¡"
+                        ]
+                    },
+                    {
+                        "title": "¡--_S_ys_admin--¡",
+                        "list": [
+                            "windows",
+                            "linux(debian, manjaro,fedora)"
+                        ]
+                    },
+                    {
+                        "title": "¡--_H_ardware--¡",
+                        "list": [
+                            "",
+                            "¡--__PC--¡ and ¡--__server--¡ diagnostic and repair",
+                            "¡--__pcb--¡-level repair for simple boards"
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
 }

@@ -1,17 +1,37 @@
+// *{
+//     // border: 1px solid red;
+// }
+
 .brief {
     $borders : hsla(0, 0%, 100%, 0.3);
 
-    @media (min-width: 720px) {
+    #brief-title {
+        flex-basis: 100%;
+
+        text-align: center;
+
+    }
+
+    @media (min-width: 770px) {
 
         display: flex;
         flex-direction: row;
         justify-content: space-around;
         align-items: start;
-        padding-top: 10%;
+        flex-wrap: wrap;
+        
 
     }
 
+    h1 {
+        border-top: 2px solid rgba(128, 128, 128, 0.44);
+        padding-left: .5rem;
+        border-left: 1px solid #80808026;
+    }
+
     .list {
+        border-left: 1px solid #80808026;
+
         display: flex;
         flex-direction: column;
 
@@ -20,7 +40,9 @@
             max-width: fit-content;
         }
 
+
         .tech-title {
+
             margin: 0;
             padding-left: .5rem;
             background-image: linear-gradient($borders, $borders);

@@ -7,65 +7,99 @@
         },
         {
             "title": "<h2>Hola!</h2>",
-            "content": "<h4>En esta pagina se pueden ver algunos de los <a href='#proyectos' class='link-pointer'>¡--_p_royectos--¡</a> en los que trabaje en los ultimos años.</br> Tambien un resumen de los <a href='#brief' class='link-pointer'>¡--_c_onocimientos--¡</a> en relacion a tecnologia que fui obteniendo.</h4>",
+            "content": "En esta pagina se pueden ver algunos de los <a href='#proyectos' class='link-pointer'>¡--_p_royectos--¡</a> en los que trabaje en los ultimos años.</br> Tambien un resumen de los <a href='#brief' class='link-pointer'>¡--_c_onocimientos--¡</a> en relacion a tecnologia que fui obteniendo.",
             "id": "greeting"
         }
     ],
-    "brief_content": [
-        {
-            "category": "¡--_d_evelopment--¡",
-            "list": [
-                {
-                    "title": "--_F_ront--_end",
-                    "list": [
-                        "--__HTML--",
-                        "¡--__JavaScript--¡",
-                        "--__CSS--",
-                        "--__React--JS",
-                        "--__Vue--JS"
-                    ]
-                },
-                {
-                    "title": "¡--_B_ack--_end¡",
-                    "list": [
-                        "--__MySQL--",
-                        "--__Mongo--DB",
-                        "--__PHP--",
-                        "--__Python--",
-                        "--__Node--JS"
-                    ]
-                }
-            ]
-        },
-        {
-            "category": "¡--_i_t--¡",
-            "list": [
-                {
-                    "title": "¡--_N_etworking--¡",
-                    "list": [
-                        "Configuracion de ¡--__router--¡, ¡--__switch--¡ y ¡--__AP--¡",
-                        "¡--__Crimpeado--¡ de conectores RJ45 (ethernet)",
-                        "Configuracion de ¡--__servidores--¡",
-                        "Configuracion de ¡--__V-lans--¡",
-                        "Configuracion ¡--__nginx reverse proxy--",
-                        "Utilizacion de ¡--_ _Docker--¡ para despliegue de servicios"
-                    ]
-                },
-                {
-                    "title": "¡--_S_ys_admin--¡",
-                    "list": [
-                        "windows",
-                        "linux(debian, manjaro,fedora)"
-                    ]
-                },
-                {
-                    "title": "¡--_H_ardware--¡",
-                    "list": [
-                        "diagnostico y reparacion de ¡--__PC--¡ y ¡--__servidores--¡",
-                        "Reparacion a nivel ¡--__pcb--¡ de placas simples"
-                    ]
-                }
-            ]
-        }
-    ]
+    "proyects_content": {
+        "title": "proyectos",
+        "content": [
+            {
+                "title": "asignaciones.com.ar",
+                "sections": [
+                    {
+                        "subtitle": "que es?<br>",
+                        "content": "asignaciones es un proyecto<small class='text-small'>[no oficial]</small> diseñado para mostrar información sobre los horarios de trabajo de mis antiguos compañeros en Burger King. La plataforma proporciona una fuente de información sobre los horarios laborales, permitiendo a los usuarios acceder de manera rápida y sencilla a esta información. A través de Asignaciones, los usuarios pueden visualizar sus horarios de mejor manera y conocer los horarios de trabajo de sus compañeros."
+                    },
+                    {
+                        "subtitle": "por que?<br>",
+                        "content": "inicialmente fue solución para ayudar a mis compañeros de trabajo que no tenían dispositivos Android, ya que la aplicación oficial proporcionada por la empresa solo era compatible con esos dispositivos.<br> ademas ofrece características adicionales que mejoran la experiencia en comparación con la aplicación oficial: <ul><li>los usuarios pueden acceder a un registro completo de los horarios de trabajo anteriores</li><li>proporciona la capacidad de calcular automáticamente la cantidad de horas trabajadas en un período de quincena</li> <li>los usuarios pueden ver una lista detallada de las personas que están programadas para trabajar en cada día específico, lo que facilita la coordinación y la comunicación entre compañeros</li><li>mayor uptime con respecto al sistema oficial</li><li>etc</li></ul>"
+                    },
+                    {
+                        "subtitle": "como?<br>",
+                        "content": "el sistema se encarga de tomar la lista de horarios desde la api oficial, guarda una copia en una base de datos MySQL, esto permite que el sistema siga mostrando la información de los horarios incluso si el sistema oficial no está en funcionamiento"
+                    },
+                    {
+                        "subtitle": "con que?<br>",
+                        "content": "esta pagina tuvo varias iteraciones, pero hoy en dia se compone de un backend en PHP con MySQL, y un frontend utilizando React."
+                    },
+                    {
+                        "subtitle": "donde?<br>",
+                        "content": "en mi home server, a travez de cloudflare tunneling."
+                    }
+                ],
+                "category": "fullstack"
+            }
+        ]
+    },
+    "brief_content": {
+        "title": "conocimientos",
+        "content": [
+            {
+                "category": "¡--_d_evelopment--¡",
+                "list": [
+                    {
+                        "title": "--_F_ront--_end",
+                        "list": [
+                            "--__HTML--",
+                            "¡--__JavaScript--¡",
+                            "--__CSS--",
+                            "--__React--JS",
+                            "--__Vue--JS"
+                        ]
+                    },
+                    {
+                        "title": "¡--_B_ack--_end¡",
+                        "list": [
+                            "--__MySQL--",
+                            "--__Mongo--DB",
+                            "--__PHP--",
+                            "--__Python--",
+                            "--__Node--JS"
+                        ]
+                    }
+                ]
+            },
+            {
+                "category": "¡--_i_t--¡",
+                "list": [
+                    {
+                        "title": "¡--_N_etworking--¡",
+                        "list": [
+                            "Configuracion de ¡--__router--¡, ¡--__switch--¡ y ¡--__AP--¡",
+                            "¡--__Crimpeado--¡ de conectores RJ45 (ethernet)",
+                            "Configuracion de ¡--__servidores--¡",
+                            "Configuracion de ¡--__V-lans--¡",
+                            "Configuracion ¡--__nginx reverse proxy--",
+                            "Utilizacion de ¡--_ _Docker--¡ para despliegue de servicios"
+                        ]
+                    },
+                    {
+                        "title": "¡--_S_ys_admin--¡",
+                        "list": [
+                            "windows",
+                            "linux(debian, manjaro,fedora)"
+                        ]
+                    },
+                    {
+                        "title": "¡--_H_ardware--¡",
+                        "list": [
+                            "diagnostico y reparacion de ¡--__PC--¡ y ¡--__servidores--¡",
+                            "Reparacion a nivel ¡--__pcb--¡ de placas simples"
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
 }
