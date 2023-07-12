@@ -1,33 +1,34 @@
+import Text_highlighter from "./Text_highlighter";
+
 // import Text_highlighter from "./Text_highlighter";
 type Type_data = {
     content: {
         title: string;
+        highlight_title: string;
         sections: {
             subtitle: string;
             content: string;
         }[];
         category: string;
-    };
+    }[];
+    title: string;
 };
 
-function Proyects(props: Type_data) {
-    console.log(props);
-
+function Proyects_list(props: Type_data) {
     return (
         <>
-            <h1>
-                {props.content.title}
-                <small className="text-small">({props.content.category})</small>
-            </h1>
-            
-            {props.content.sections.map((item, index) => (
-                <div className="sec" key={index}>
-                    <small>{item.subtitle}</small>
-                    <div>{item.content}</div>
-                </div>
-            ))}
+            <ul>
+                {props.content.map((item, index) => (
+                    <li key={index}>
+                        <a className="link-pointer " href={"#" + item.title}>
+                            <Text_highlighter content={item.highlight_title}></Text_highlighter>
+                        </a>{" "}
+                        {item.category}
+                    </li>
+                ))}
+            </ul>
         </>
     );
 }
 
-export default Proyects;
+export default Proyects_list;

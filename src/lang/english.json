@@ -7,7 +7,7 @@
         },
         {
             "title": "Hi!",
-            "content": "You can check out some of the <a href='#proyectos' class='link-pointer'>¡--_p_rojects--¡</a> I've been working on in over the past few years on this page.</br> Also a summary of the  <a href='#brief' class='link-pointer'>¡--_k_nowledge--¡</a>  I have been acquiring regarding technology.",
+            "content": "You can check out some of the <a href='#projects' class='link-pointer'>¡--_p_rojects--¡</a> I am currently working on</br> Also a summary of the  <a href='#brief' class='link-pointer'>¡--_k_nowledge--¡</a>  I have been acquiring regarding technology",
             "id": "greeting"
         }
     ],
@@ -16,29 +16,65 @@
         "content": [
             {
                 "title": "asignaciones.com.ar",
+                "highlight_title": "¡--_a_signaciones.com.ar--¡",
+                "category": "fullstack [react,php,mysql]",
                 "sections": [
                     {
-                        "subtitle": "what is it?<br>",
-                        "content": "\"Asignaciones\" is an <small class='text-small'>[unofficial]</small>project designed to display information about the work schedules of my former colleagues at Burger King. The platform serves as a source of information regarding work schedules, enabling users to access this information quickly and easily. Through Asignaciones, users can view their schedules more effectively and get insights into the work schedules of their colleagues."
+                        "subtitle": "¡--_-_what is it?--¡",
+                        "content": "\"asignaciones\"<small class='text-small'>[unofficial]</small> is a project designed to display information about the work schedules of my former colleagues at Burger King<br> The platform serves as a source of information regarding work schedules, enabling users to access this information quickly and easily<br> Through asignaciones, users can view their schedules more effectively and get insights into the work schedules of their colleagues"
                     },
                     {
-                        "subtitle": "why?<br>",
-                        "content": "Initially, it was a solution to assist my coworkers who didn't have Android devices since the official application provided by the company was only compatible with those devices.<br>  Additionally, it offers additional features that enhance the user experience compared to the official application: <ul><li>Users can access a complete record of previous work schedules.</li><li>It provides the ability to automatically calculate the number of hours worked in a bi-weekly period.</li> <li>Users can view a detailed list of individuals scheduled to work on specific days, facilitating coordination and communication among coworkers.</li><li>Higher uptime compared to the official system.</li><li>And much more.</li></ul>"
+                        "subtitle": "¡--_-_why?--¡",
+                        "content": "initially, it was a solution to assist my coworkers who didn't have Android devices since the official application provided by the company was only compatible with those devices<br>  Additionally, it offers additional features that enhance the user experience compared to the official application: <ul><li>Users can access a complete record of previous work schedules</li><li>It provides the ability to automatically calculate the number of hours worked in a bi-weekly period</li> <li>Users can view a detailed list of individuals scheduled to work on specific days, facilitating coordination and communication among coworkers</li><li>Higher uptime compared to the official system</li><li>And much more</li></ul>"
                     },
                     {
-                        "subtitle": "how?<br>",
-                        "content": "The system retrieves the list of schedules from the official API and stores a copy in a MySQL database. This ensures that the system can continue displaying schedule information even if the official system is not operational."
+                        "subtitle": "¡--_-_how?--¡",
+                        "content": "the system retrieves the list of schedules from the official API and stores a copy in a MySQL database<br> This ensures that the system can continue displaying schedule information even if the official system is not operational"
                     },
                     {
-                        "subtitle": "with what?<br>",
-                        "content": "This page has gone through several iterations, but nowadays it consists of a PHP backend with MySQL and a frontend using React."
+                        "subtitle": "¡--_-_with what?--¡",
+                        "content": "this page has gone through several iterations, but nowadays it consists of a PHP backend with MySQL and a frontend using React"
                     },
                     {
-                        "subtitle": "where?<br>",
-                        "content": "in my home server through cloudflare's tunneling."
+                        "subtitle": "¡--_-_where?--¡",
+                        "content": "in my home server on a docker container, through cloudflare's tunneling"
+                    },
+                    {
+                        "subtitle": "¡--_-_future--¡",
+                        "content": "in the future, I plan to further improve the user experience by redesigning the front-end and migrating the backend to nodeJS or python<br> these changes are based on the new knowledge I have acquired in both areas, which will allow me to provide a more intuitive and efficient interface for the users"
                     }
-                ],
-                "category": "fullstack"
+                ]
+            },
+            {
+                "title": "lebotike",
+                "category": "discord bot[python,MySQL]",
+                "highlight_title": "¡--_l_ebotike--¡",
+                "sections": [
+                    {
+                        "subtitle": "¡--_-_what is it?--¡",
+                        "content": "\"Lebotike\" is a bot designed to automate and facilitate various activities for users in a private discord chat."
+                    },
+                    {
+                        "subtitle": "¡--_-_why?--¡",
+                        "content": "Initially, it was created as a bot to display weather information for the cities of the chat participants, including current weather, forecasts, and extended forecasts. However, over time, it has acquired more functionalities, such as:<ul><li>currency conversion</li><li>polls</li><li>translation</li><li>reminders</li><li>saving favorite messages</li><li>and more</li></ul>"
+                    },
+                    {
+                        "subtitle": "¡--_-_how?--¡",
+                        "content": "the bot handles multiple independent tasks, which would be cumbersome to explain one by one. It primarily works in conjunction with APIs."
+                    },
+                    {
+                        "subtitle": "¡--_-_with what?--¡",
+                        "content": "the bot runs using pm2 to run python code as a service, and utilizes a MySQL database."
+                    },
+                    {
+                        "subtitle": "¡--_-_where?--¡",
+                        "content": "it is hosted in my home server, connected through the Discord API."
+                    },
+                    {
+                        "subtitle": "¡--_-_future--¡",
+                        "content": "i am planning to migrate the Python code to Node.js."
+                    }
+                ]
             }
         ]
     },

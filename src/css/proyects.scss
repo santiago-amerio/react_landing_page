@@ -1,7 +1,34 @@
-#proyects {
+.proyects {
+    .animated {
+        transition: .1s;
+    }
+
+    .hidden {
+        font-size: 0rem;
+    }
+
+    .shown {
+        font-size: 1rem;
+    }
+
+    color: rgb(190, 190, 190);
+
     span {
         font-weight: 100;
-        font-size: .9rem;
-        color: #c8c8c8;
+        word-spacing: -.2rem;
+    }
+
+    .proyect-section-title {
+       
+
+        margin-left: 1rem;
+        margin-top: 1rem;
+        margin-bottom: .2rem;
+    }
+
+    .proyect-section-content {
+        margin-left: 2rem;
+        border-left: 1px solid gray;
+        padding-left: 1rem
     }
 }

@@ -9,23 +9,40 @@ $secondary_text-color: $primary_text_color;
 
 
 .sec {
-    * {
-        transition: opacity .5s ease;
-        opacity: 1;
+
+
+    align-items: center;
+
+    &.max-height {
+        min-height: 100vh;
     }
 
-    
+    padding: 2rem 1rem;
+
+    >* {
+        transition: opacity .5s ease;
+        opacity: 1;
+
+    }
+
+
     &.translating {
-        * {
-            opacity: .1
+        >* {
+            opacity: 0
         }
     }
 
-    align-items: center;
-    min-height: 100vh;
+
 
     .starting_highlight {
         color: $primary_highlight;
+
+
+        animation-name: blink_highlight;
+        animation-duration: 1s;
+        animation-iteration-count: infinite;
+
+
     }
 
     .highlight {
@@ -87,5 +104,24 @@ $secondary_text-color: $primary_text_color;
                 }
             }
         }
+    }
+}
+
+
+@keyframes blink_highlight {
+    0% {
+        opacity: .9;
+    }
+
+    30% {
+        opacity: 1;
+    }
+
+    70% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: .9;
     }
 }

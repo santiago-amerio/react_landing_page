@@ -7,7 +7,7 @@
         },
         {
             "title": "<h2>Hola!</h2>",
-            "content": "En esta pagina se pueden ver algunos de los <a href='#proyectos' class='link-pointer'>¡--_p_royectos--¡</a> en los que trabaje en los ultimos años.</br> Tambien un resumen de los <a href='#brief' class='link-pointer'>¡--_c_onocimientos--¡</a> en relacion a tecnologia que fui obteniendo.",
+            "content": "En esta pagina se pueden ver algunos de los <a href='#projects' class='link-pointer'>¡--_p_royectos--¡</a> en los que estoy trabajando actualmente</br> Tambien un resumen de los <a href='#brief' class='link-pointer'>¡--_c_onocimientos--¡</a> en relacion a tecnologia que fui obteniendo",
             "id": "greeting"
         }
     ],
@@ -16,29 +16,65 @@
         "content": [
             {
                 "title": "asignaciones.com.ar",
+                "highlight_title": "¡--_a_signaciones.com.ar--¡",
+                "category": "fullstack  [react,php,mysql]",
                 "sections": [
                     {
-                        "subtitle": "que es?<br>",
-                        "content": "asignaciones es un proyecto<small class='text-small'>[no oficial]</small> diseñado para mostrar información sobre los horarios de trabajo de mis antiguos compañeros en Burger King. La plataforma proporciona una fuente de información sobre los horarios laborales, permitiendo a los usuarios acceder de manera rápida y sencilla a esta información. A través de Asignaciones, los usuarios pueden visualizar sus horarios de mejor manera y conocer los horarios de trabajo de sus compañeros."
+                        "subtitle": "¡--_-_que es?--¡",
+                        "content": "\"asignaciones\"<small class='text-small'>[no oficial]</small> es un proyecto diseñado para mostrar informacion sobre los horarios de trabajo de mis antiguos compañeros en Burger King<br> La plataforma proporciona una fuente de informacion sobre los horarios laborales, permitiendo a los usuarios acceder de manera rapida y sencilla a esta informacion<br> a traves de Asignaciones, los usuarios pueden visualizar sus horarios de mejor manera y conocer los horarios de trabajo de sus compañeros"
                     },
                     {
-                        "subtitle": "por que?<br>",
-                        "content": "inicialmente fue solución para ayudar a mis compañeros de trabajo que no tenían dispositivos Android, ya que la aplicación oficial proporcionada por la empresa solo era compatible con esos dispositivos.<br> ademas ofrece características adicionales que mejoran la experiencia en comparación con la aplicación oficial: <ul><li>los usuarios pueden acceder a un registro completo de los horarios de trabajo anteriores</li><li>proporciona la capacidad de calcular automáticamente la cantidad de horas trabajadas en un período de quincena</li> <li>los usuarios pueden ver una lista detallada de las personas que están programadas para trabajar en cada día específico, lo que facilita la coordinación y la comunicación entre compañeros</li><li>mayor uptime con respecto al sistema oficial</li><li>etc</li></ul>"
+                        "subtitle": "¡--_-_por que?--¡",
+                        "content": "inicialmente fue solucion para ayudar a mis compañeros de trabajo que no tenian dispositivos Android, ya que la aplicacion oficial proporcionada por la empresa solo era compatible con esos dispositivos<br> ademas ofrece caracteristicas adicionales que mejoran la experiencia en comparacion con la aplicacion oficial: <br><ul><li>los usuarios pueden acceder a un registro completo de los horarios de trabajo anteriores</li><li>proporciona la capacidad de calcular automaticamente la cantidad de horas trabajadas en un periodo quincenal</li> <li>los usuarios pueden ver una lista detallada de las personas que estan programadas para trabajar en cada dia especifico, lo que facilita la coordinacion y la comunicacion entre compañeros</li><li>mayor uptime con respecto al sistema oficial</li><li>etc</li></ul>"
                     },
                     {
-                        "subtitle": "como?<br>",
-                        "content": "el sistema se encarga de tomar la lista de horarios desde la api oficial, guarda una copia en una base de datos MySQL, esto permite que el sistema siga mostrando la información de los horarios incluso si el sistema oficial no está en funcionamiento"
+                        "subtitle": "¡--_-_como?--¡",
+                        "content": "el sistema se encarga de tomar la lista de horarios desde la API oficial, guarda una copia en una base de datos MySQL, esto permite que el sistema siga mostrando la informacion de los horarios incluso si el sistema oficial no esta en funcionamiento"
                     },
                     {
-                        "subtitle": "con que?<br>",
-                        "content": "esta pagina tuvo varias iteraciones, pero hoy en dia se compone de un backend en PHP con MySQL, y un frontend utilizando React."
+                        "subtitle": "¡--_-_con que?--¡",
+                        "content": "esta pagina tuvo varias iteraciones, pero hoy en dia se compone de un backend en PHP con MySQL, y un frontend utilizando React"
                     },
                     {
-                        "subtitle": "donde?<br>",
-                        "content": "en mi home server, a travez de cloudflare tunneling."
+                        "subtitle": "¡--_-_donde?--¡",
+                        "content": "en mi home server funcionando dentro de un contenedor de docker, a travez de cloudflare tunneling"
+                    },
+                    {
+                        "subtitle": "¡--_-_futuro--¡",
+                        "content": "en el futuro, planeo mejorar aun mas la experiencia de usuario al rediseñar el front-end y migrar el backend a nodeJS o python<br> estos cambios se basan en los nuevos conocimientos que he adquirido en ambos frentes, lo que permitira proporcionar una interfaz mas intuitiva y eficiente para los usuarios"
                     }
-                ],
-                "category": "fullstack"
+                ]
+            },
+            {
+                "title": "lebotike",
+                "highlight_title": "¡--_l_ebotike--¡",
+                "category": "discord bot[python,MySQL]",
+                "sections": [
+                    {
+                        "subtitle": "¡--_-_que es?--¡",
+                        "content": "\"lebotike\" es un bot con el proposito de automatizar y facilitar diversas actividades para los usuarios de un chat privado de discord"
+                    },
+                    {
+                        "subtitle": "¡--_-_por que?--¡",
+                        "content": "Inicialmente, fue creado como un bot para mostrar información climática de las ciudades de los participantes del chat, incluyendo el clima actual, pronósticos y pronósticos extendidos. Sin embargo, con el tiempo, ha adquirido más funcionalidades, tales como: <ul><li>conversion de moneda</li><li>encuestas</li><li>traductor</li><li>recordatorios</li><li>guardar mensajes favoritos</li><li>etc</li></ul>"
+                    },
+                    {
+                        "subtitle": "¡--_-_como?--¡",
+                        "content": "el bot se encarga de muchas tareas independientes, como para explicar una a una<br> trabaja mayormente en conjunto con API's"
+                    },
+                    {
+                        "subtitle": "¡--_-_con que?--¡",
+                        "content": "el bot se ejecuta utilizando pm2 para ejecutar el código Python como un servicio"
+                    },
+                    {
+                        "subtitle": "¡--_-_donde?--¡",
+                        "content": "en mi home server, conectado a travez de la api de discord"
+                    },
+                    {
+                        "subtitle": "¡--_-_futuro--¡",
+                        "content": "esta en mis plantes migrar el codigo python a nodeJS"
+                    }
+                ]
             }
         ]
     },
@@ -46,7 +82,7 @@
         "title": "conocimientos",
         "content": [
             {
-                "category": "¡--_d_evelopment--¡",
+                "category": "¡--_d_esarrollo--¡",
                 "list": [
                     {
                         "title": "--_F_ront--_end",
@@ -74,7 +110,7 @@
                 "category": "¡--_i_t--¡",
                 "list": [
                     {
-                        "title": "¡--_N_etworking--¡",
+                        "title": "¡--_R_edes--¡",
                         "list": [
                             "Configuracion de ¡--__router--¡, ¡--__switch--¡ y ¡--__AP--¡",
                             "¡--__Crimpeado--¡ de conectores RJ45 (ethernet)",

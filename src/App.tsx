@@ -10,6 +10,7 @@ import classNames from "classnames";
 import es from "./lang/spanish.json";
 import en from "./lang/english.json";
 import Proyects from "./components/proyects";
+import Proyects_list from "./components/proyects_list";
 
 function App() {
   const land_language = window.location.pathname.replace("/", "");
@@ -21,13 +22,13 @@ function App() {
 
   const [currentLanguage, setCurrentLanguage] = useState(land_language);
   const handleLanguageSwitch = async () => {
-    
+
     setIsTranslating("translating");
     await timeout(500);
     setCurrentLanguage(currentLanguage === "es" ? "en" : "es");
     setIsTranslating("");
 
-    
+
   };
 
   const languageData = currentLanguage === "es" ? es : en;
@@ -44,7 +45,7 @@ function App() {
             </Link>
           </Router>
         </div>
-        <div className={classNames("sec", { ["translating"]: isTranslating })} id="head">
+        <div className={classNames("sec max-height", { ["translating"]: isTranslating })} id="head">
           <div>
             <div className="title-left">
               <Text_highlighter content={introduction[0].title}></Text_highlighter>
@@ -58,18 +59,20 @@ function App() {
             <Text_highlighter content={introduction[1].content}></Text_highlighter>
           </div>
         </div>
-        <div id="proyects" >
-          <h1>{proyects_content.title}</h1>
-          {proyects_content.content.map((item, index) => (
-            <div className="sec" key={index}>
-              <Proyects content={item}></Proyects>
-            </div>
-          ))}
-        </div>
 
-        <div id="brief" className={classNames("sec brief", { ["translating"]: isTranslating })}>
-          <div id="brief-title" >
-            <h1 >{brief_content.title}</h1>
+        <div className={classNames("sec", { ["translating"]: isTranslating })}>
+          <h1 id="projects" className="sec-title">{proyects_content.title}</h1>
+          <Proyects_list content={proyects_content.content} title={proyects_content.title}></Proyects_list>
+        </div>
+        {proyects_content.content.map((item, index) => (
+          <div id={item.title} className={classNames("sec proyects", { ["translating"]: isTranslating })} key={index}>
+            <Proyects content={item}></Proyects>
+          </div>
+        ))}
+
+        <div id="brief" className={classNames("sec brief max-height", { ["translating"]: isTranslating })}>
+          <div id="brief-title">
+            <h1 className="sec-title">{brief_content.title}</h1>
           </div>
           {brief_content.content.map((item, index) => (
             <div key={index}>
