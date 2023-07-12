@@ -22,7 +22,7 @@ function Proyects_list(props: Type_data) {
                     <li key={index}>
                         <a className="link-pointer " href={"#" + item.title}>
                             <Text_highlighter content={item.highlight_title}></Text_highlighter>
-                        </a>{" "}
+                        </a>{": "}
                         {item.category}
                     </li>
                 ))}
