@@ -11,6 +11,7 @@ import es from "./lang/spanish.json";
 import en from "./lang/english.json";
 import Proyects from "./components/proyects";
 import Proyects_list from "./components/proyects_list";
+import Star from "./components/star";
 
 function App() {
   const land_language = window.location.pathname.replace("/", "");
@@ -81,6 +82,7 @@ function App() {
           ))}
         </div>
       </div>
+      <Star></Star>
     </>
   );
 }
